@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator + Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <div class="calculator">
+    <div class="top-panel">
+      <button id="themeToggle" class="btn themeBtn">🌙</button>
+      <select id="modeSelect" class="mode-select">
+        <option value="calc">Calculator</option>
+        <option value="convert">Converter</option>
+      </select>
+    </div>
+
+    <div id="calcMode">
+      <div class="display">
+        <div class="expression" id="exprDisplay"></div>
+        <div class="result" id="resultDisplay">0</div>
+      </div>
+      <div class="buttons">
+        <!-- Memory row -->
+        <button class="btn memory" data-value="MC">MC</button>
+        <button class="btn memory" data-value="MR">MR</button>
+        <button class="btn memory" data-value="M+">M+</button>
+        <button class="btn memory" data-value="M-">M-</button>
+
+        <!-- Function row -->
+        <button class="btn func" data-value="√">√</button>
+        <button class="btn func" data-value="%">%</button>
+        <button class="btn operator" data-value="C">C</button>
+        <button class="btn operator" data-value="÷">÷</button>
+
+        <!-- Numbers & operators -->
+        <button class="btn number" data-value="7">7</button>
+        <button class="btn number" data-value="8">8</button>
+        <button class="btn number" data-value="9">9</button>
+        <button class="btn operator" data-value="×">×</button>
+
+        <button class="btn number" data-value="4">4</button>
+        <button class="btn number" data-value="5">5</button>
+        <button class="btn number" data-value="6">6</button>
+        <button class="btn operator" data-value="−">−</button>
+
+        <button class="btn number" data-value="1">1</button>
+        <button class="btn number" data-value="2">2</button>
+        <button class="btn number" data-value="3">3</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <button class="btn number" data-value="0">0</button>
+        <button class="btn number" data-value=".">.</button>
+        <button class="btn operator" data-value="("> (</button>
+        <button class="btn operator" data-value=")"> )</button>
+
+        <button class="btn equals" data-value="=">=</button>
+      </div>
+    </div>
+
+    <div id="convertMode" class="converter" style="display:none;">
+      <h3>Converter</h3>
+      <label>
+        Value:
+        <input type="number" id="convInput" value="0">
+      </label>
+      <label>
+        From:
+        <select id="convFrom">
+          <option value="kg">kg</option>
+          <option value="lb">lb</option>
+          <option value="m">m</option>
+          <option value="ft">ft</option>
+          <option value="c">°C</option>
+          <option value="f">°F</option>
+        </select>
+      </label>
+      <label>
+        To:
+        <select id="convTo">
+          <option value="kg">kg</option>
+          <option value="lb">lb</option>
+          <option value="m">m</option>
+          <option value="ft">ft</option>
+          <option value="c">°C</option>
+          <option value="f">°F</option>
+        </select>
+      </label>
+      <button id="convBtn" class="btn">Convert</button>
+      <div class="convResult" id="convResult">0</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
