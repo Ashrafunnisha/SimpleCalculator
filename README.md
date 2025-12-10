@@ -61,3 +61,18 @@ Smooth hover effects
 Clean and polished display
 
 Works on both desktop and mobile
+
+<img width="638" height="439" alt="image" src="https://github.com/user-attachments/assets/d76352d4-2300-4fca-a07e-ec73509f2797" />
+
+
+
+
+
+
+
+
+
+
+
+
+
